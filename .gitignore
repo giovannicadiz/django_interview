@@ -1,3 +1,5 @@
 .idea/
 db.sqlite3
 *.pyc
+polls/__pycache__/
+django_interview/__pycache__/
