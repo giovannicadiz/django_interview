@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>My amazing blog</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        <ul>
+        </ul>
+    </div>
+
+    <div id="content">
+      {% autoescape off %}
+      <h1>{% block title %}{% endblock %}</h1>
+      {% block content %}
+      {% endblock %}
+      {% endautoescape %}
+    </div>
+</body>
+</html>
